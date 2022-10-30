@@ -6,26 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h1>How Git works</h1>
-    <p>Here is a basic overview of how Git works:<br>
+    <body>
+        <h1>How Git works</h1>
+        <p>Here is a basic overview of how Git works:<br>
 
-        Create a "repository" (project) with a git hosting tool (like Bitbucket)<br>
-        Copy (or clone) the repository to your local machine<br>
-        Add a file to your local repo and "commit" (save) the changes<br>
-        "Push" your changes to your main branch<br>
-        Make a change to your file with a git hosting tool and commit<br>
-        "Pull" the changes to your local machine<br>
-        Create a "branch" (version), make a change, commit the change<br>
-        Open a "pull request" (propose changes to the main branch)<br>
-        "Merge" your branch to the main branch</p>
-    
-    <br><br>
-    <h1>Step 1. Create the repository</h1>
-    <p>Initially, the repository you create is going to be empty without any code in it. That's okay because you will start adding some files to it soon. This repository will be the central repository for your files, which means that others can access that repository if you give them permission. After creating a repository, you'll copy a version to your local system—that way you can update it from one repo, then transfer those changes to the other.
+            Create a repository in GitHub<br>
+            Initialize Git in your project<br>
+            Add and commit your project<br>
+            Push your project to GitHub<br>
+            Add and remove a file from a repository</p>
+        
+        <br><br>
+        <h1>Step 1. Create the repository</h1>
+        <p>Initially, the repository you create is going to be empty without any code in it. That's okay because you will start adding some files to it soon. This repository will be the central repository for your files, which means that others can access that repository if you give them permission. After creating a repository, you'll copy a version to your local system—that way you can update it from one repo, then transfer those changes to the other.
 
-    </p> 
-    <img src="Images/NewRepo.PNG" alt="Image Not Found" width="500" height="600">
-    <img src="Images/HowToUseGIT.PNG" alt="Image not Found" width="500" height="600">
-</body>
+        </p> 
+        <img src="Images/NewRepo.PNG" alt="Image Not Found" width="500" height="600">
+        <img src="Images/HowToUseGIT.PNG" alt="Image not Found" width="500" height="600">
+
+        <h1>Step 2. Initialize Git in Project</h1>
+        <p>We can't make use of Git in our project if we do not initialize/start it first with the git init command.
+
+            So after creating the repository in GitHub, I'll open the project in my VS Code editor, go to my terminal, and then use the git init command to initialize/start.
+            
+            When you run this command in your terminal, you will notice some changes in color in your project. You will also see a U symbol which means your files are untracked.
+            
+            Also, when you open the folder where your project is stored/located, you will see another folder named .git which was automatically created when you ran the git init command.</p>
+
+
+    </body>
 </html>
