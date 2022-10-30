@@ -1,114 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to use GIT</title>
-    <style>
-        body {  
-            background-color: powderblue;
-            text-align: justify;
-            margin: 100px 100px 100px 100px;
-        }
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>How to use GIT</title>
+		<style>
+			body {
+				background-color: gainsboro;
+				width: 50%;
+				margin: 0 auto;
+				text-align: center;
+			}
 
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-        }
+			img {
+				width: 100%;
+			}
 
-        p {
-            margin: 0px 50px 0px 50px;
-            font-family:verdana;
-        }
+			p {
+				margin: 0px 50px 0px 50px;
+				font-family: verdana;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>How Git works ?</h1>
+		<p>
+			Here is a basic overview of how Git works:<br /><br />
 
-    </style>
-</head>
-    <body>
-        <h1>How Git works</h1>
-        <p>Here is a basic overview of how Git works:<br><br>
+			1. Create a repository in your GitHub<br />
+			2. Initialize Git in your project<br />
+			3. Add and commit your project<br />
+			4. Push your project to GitHub<br />
+		</p>
 
-            1. Create a repository in GitHub<br>
-            2. Initialize Git in your project<br>
-            3. Add and commit your project<br>
-            4. Push your project to GitHub<br>
-        </p>
-        
-        
-        <h1>Step 1. Create the repository</h1>
-        <p>Initially, the repository you create is going to be empty without any code in it. That's okay because you will start adding some files to it soon. This repository will be the central repository for your files, which means that others can access that repository if you give them permission. After creating a repository, you'll copy a version to your local system—that way you can update it from one repo, then transfer those changes to the other.
+		<h1>1. Creating a repository</h1>
+		<p>
+			Initially, the repository you create is going to be empty without any code
+			in it. That's okay because you will start adding some files to it soon.
+			This repository will be the central repository for your files, which means
+			that others can access that repository if you give them permission. After
+			creating a repository, you'll copy a version to your local system—that way
+			you can update it from one repo, then transfer those changes to the other.
+		</p>
+		<br />
+		<img src="Images/NewRepo.PNG" alt="Image Not Found" />
+		<br />
+		<br />
+		<img src="Images/HowToUseGIT.PNG" alt="Image Not Found" />
 
-        </p> 
-        <br>
-        <img src="Images/NewRepo.PNG" alt="Image Not Found" >
-        <br>
-        <br>
-        <img src="Images/HowToUseGIT.PNG" alt="Image Not Found">
+		<h1>2. Initialize Git in Project</h1>
+		<p>
+			We can't make use of Git in our project if we do not initialize/start it
+			first with the git init command. So after creating the repository in
+			GitHub, I'll open the project in my VS Code editor, go to my terminal, and
+			then use the git init command to initialize/start. When you run this
+			command in your terminal, you will notice some changes in color in your
+			project. You will also see a U symbol which means your files are
+			untracked. Also, when you open the folder where your project is
+			stored/located, you will see another folder named .git which was
+			automatically created when you ran the git init command.
+		</p>
 
-        <h1>Step 2. Initialize Git in Project</h1>
-        <p>We can't make use of Git in our project if we do not initialize/start it first with the git init command.
+		<h1>3. Add and Commit your Project</h1>
+		<h2>How to use the git add command</h2>
+		<p>
+			Adding the project to the staging area helps Git track your project and
+			see changes you have made to it. To add your project to the staging area,
+			run the git add . command. When you run this command, you will see that
+			the U symbol automatically changes to A. This means that your files have
+			been added to the staging area and are now being tracked by Git, waiting
+			to be committed.
+		</p>
+		<br /><br /><img src="Images/GitAdd.PNG" alt="Image not Found" />
+		<h2>How to use the git commit command</h2>
+		<p>
+			By running the git commit command, you are saving this particular stage
+			and t he changes to your project permanently in the Git repository. And
+			although you might make few changes to the project in the future and
+			commit them as well, this particular commit you made now will still be
+			saved in the Git repository and can be accessed anytime. So after your
+			project has been added to the staging area, the next thing you'll want to
+			do is commit it by using the git commit –m “first commit” command. When
+			you run this command, you should notice that the A symbol in the project
+			in no longer there, and the project looks as you'd expect once again.
+		</p>
 
-            So after creating the repository in GitHub, I'll open the project in my VS Code editor, go to my terminal, and then use the git init command to initialize/start.
-            
-            When you run this command in your terminal, you will notice some changes in color in your project. You will also see a U symbol which means your files are untracked.
-            
-            Also, when you open the folder where your project is stored/located, you will see another folder named .git which was automatically created when you ran the git init command.</p>
-        
-        <h1>Step 3. Add and Commit your Project</h1>
-        <h2>How to use the git add command</h2>  
-        <p>Adding the project to the staging area helps Git track your project and see changes you have made to it.
+		<br /><br /><img src="Images/GitCommit.PNG" alt="Image Not Found" />
 
-            To add your project to the staging area, run the git add . command. When you run this command, you will see that the U symbol automatically changes to A. This means that your files have been added to the staging area and are now being tracked by Git, waiting to be committed.</p>
-        <br><br><img src="Images/GitAdd.PNG" alt="Image not Found">
-        <h2>How to use the git commit command</h2>
-        <p>By running the git commit command, you are saving this particular stage and t he changes to your project permanently in the Git repository. And although you might make few changes to the project in the future and commit them as well, this particular commit you made now will still be saved in the Git repository and can be accessed anytime.
+		<h2>ADD new folder named "Images" and COMMIT to GIT</h2>
+		<br /><br /><img src="Images/AddCommit.PNG" alt="Image Not Found" />
 
-            So after your project has been added to the staging area, the next thing you'll want to do is commit it by using the git commit –m “first commit” command.
-            
-            When you run this command, you should notice that the A symbol in the project in no longer there, and the project looks as you'd expect once again.</p>
-    
-        <br><br><img src="Images/GitCommit.PNG" alt="Image Not Found">
+		<h1>4. Push your Project to GitHub</h1>
+		<p>
+			Pushing your project to Github helps prevent your project from getting
+			corrupted/lost in the local storage. It also lets you access the GitHub
+			repository freely from anyplace, with any computer (not necessarily your
+			personal computer). To be able to push your project to the GitHub
+			repository, you will have to add the remote repository you created in
+			GitHub initially.<br />
 
-        <h2>ADD new folder named "Images" and COMMIT to GIT</h2>
-        <br><br><img src="Images/AddCommit.PNG" alt="Image Not Found">
-        
-        <h1>Step 4. Push your Project to GitHub</h1>
-        <p>Pushing your project to Github helps prevent your project from getting corrupted/lost in the local storage. It also lets you access the GitHub repository freely from anyplace, with any computer (not necessarily your personal computer).
+			To do this, you will use the git remote add origin (repository name)
+			command. In my case my repository name is: <br />
+			https://github.com/ShaheerAziz/HowToUseGIT.git. Writing it in the terminal
+			should look like this:
 
-            To be able to push your project to the GitHub repository, you will have to add the remote repository you created in GitHub initially.<br>
-            
-            To do this, you will use the git remote add origin (repository name) command. In my case my repository name is: <br> https://github.com/ShaheerAziz/HowToUseGIT.git. Writing it in the terminal should look like this:
-            
-            <br><br>git remote add origin<br> https://github.com/ShaheerAziz/HowToUseGIT.git<br><br>
+			<br /><br />git remote add origin<br />
+			https://github.com/ShaheerAziz/HowToUseGIT.git<br /><br />
 
-            Finally, after adding the remote repository where you want to upload the project and changing the branch to main, you'll want to push your project to GitHub.
+			Finally, after adding the remote repository where you want to upload the
+			project and changing the branch to main, you'll want to push your project
+			to GitHub. To achieve this, run the git push –u origin main command and
+			wait for it to load completely. When this is done, go to the Git
+			repository you created in GitHub and refresh the page. You will see that
+			all your projects in the local repository have been uploaded to the GitHub
+			repository.
+		</p>
 
-            To achieve this, run the git push –u origin main command and wait for it to load completely.
-
-            When this is done, go to the Git repository you created in GitHub and refresh the page. You will see that all your projects in the local repository have been uploaded to the GitHub repository.
-            
-        </p>
-
-        <br><br><img src="Images/PushGIT.PNG" alt="Image Not Found">
-        <br>
-        <h1>Other Important commands and their uses:</h1><br>
-        <p> 1. git --version       (to see git installed or not)<br>
-            3. git status          (to see changes)<br>
-            4. git log             (shows commits history)<br>
-            5. git diff "Filename"     (shows differnce from last commit)<br>
-            6. git checkout "Filemane" (removes modification not addition)<br>
-            </p>
-        <br>
-        <h1>Conclusion</h1>
-        <p>In this tutorial, you learned how to use the basic Git commands to manage your projects.<br>
-
-            <br><br>
-            
-            Hope this tutorial was helpful to you.
-        </p>
-
-
-    </body>
+		<br /><br /><img src="Images/PushGIT.PNG" alt="Image Not Found" />
+	</body>
 </html>
