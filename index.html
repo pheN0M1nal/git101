@@ -22,7 +22,7 @@
 
         </p> 
         <img src="Images/NewRepo.PNG" alt="Image Not Found" width="500" height="600">
-        <img src="Images/HowToUseGIT.PNG" alt="Image not Found" width="500" height="600">
+        <img src="Images/HowToUseGIT.PNG" alt="Image Not Found" width="500" height="600">
 
         <h1>Step 2. Initialize Git in Project</h1>
         <p>We can't make use of Git in our project if we do not initialize/start it first with the git init command.
@@ -46,10 +46,30 @@
             
             When you run this command, you should notice that the A symbol in the project in no longer there, and the project looks as you'd expect once again.</p>
     
-        <img src="Images/GitCommit.PNG" alt="Image not Found">
+        <img src="Images/GitCommit.PNG" alt="Image Not Found">
 
         <h2>ADD new folder named "Images" and COMMIT to GIT</h2>
-        <img src="Images/AddCommit.PNG" alt="Image not Found">
+        <img src="Images/AddCommit.PNG" alt="Image Not Found">
+        
+        <h1>Step 4. Push your Project to GitHub</h1>
+        <p>Pushing your project to Github helps prevent your project from getting corrupted/lost in the local storage. It also lets you access the GitHub repository freely from anyplace, with any computer (not necessarily your personal computer).
+
+            To be able to push your project to the GitHub repository, you will have to add the remote repository you created in GitHub initially.<br>
+            
+            To do this, you will use the git remote add origin (repository name) command. In my case my repository name is: <br> https://github.com/ShaheerAziz/HowToUseGIT.git. Writing it in the terminal should look like this:
+            
+            <br><br>git remote add origin<br> https://github.com/ShaheerAziz/HowToUseGIT.git<br><br>
+
+            Finally, after adding the remote repository where you want to upload the project and changing the branch to main, you'll want to push your project to GitHub.
+
+            To achieve this, run the git push –u origin main command and wait for it to load completely.
+
+            When this is done, go to the Git repository you created in GitHub and refresh the page. You will see that all your projects in the local repository have been uploaded to the GitHub repository.
+            
+        </p>
+
+        <img src="Images/PushGIT.PNG" alt="Image Not Found">
+
 
     </body>
 </html>
